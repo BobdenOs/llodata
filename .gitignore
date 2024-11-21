@@ -1,0 +1,6 @@
+odata
+build/Release
+build/Debug
+build/*.c
+build/*.h
+node_modules/

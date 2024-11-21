@@ -1,0 +1,26 @@
+{
+  "name": "llodata",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "cat requests | ./odata",
+    "build": "make && node-gyp build",
+    "build:debug": "node-gyp build -d",
+    "prepack": "npm run build",
+    "pretest": "npm run build",
+    "test": "npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@sap/cds": "^8.4.2",
+    "bindings": "^1.5.0",
+    "llparse": "^7.1.1",
+    "node-addon-api": "^8.0.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^10.2.0"
+  },
+  "gypfile": true
+}
